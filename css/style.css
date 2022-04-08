@@ -185,4 +185,49 @@ table th {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
+
+table th:first-child {
+  border-top-left-radius: 0.3rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.3rem;
+}
+
+table td {
+  font-family: "Fredoka", "sans-serif";
+  padding: 0.8em;
+}
+
+tabletd:first-child {
+  width: 70%;
+  font-size: 1.5rem;
+}
+
+table td:nth-child(2),
+table td:nth-child(3) {
+  width: 15%;
+  font-size: 1.1rem;
+}
+
+table .fa-2x {
+  font-size: 1.3em;
+  color: #ffc107;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+table .fa-2x:hover {
+  color: #ffca2c;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+table td:nth-child(3) .fa-2x {
+  color: #dc3545;
+}
+
+table td:nth-child(3) .fa-2x:hover {
+  color: #bb2d3b;
+}
 /*# sourceMappingURL=style.css.map */
