@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First web page</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-</head>
-<body>
-<script src="js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-list</title>
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/6eb30e1fac.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+        <h1>Task list</h1>
+        <div class="alert dismissible">   
+            Please insert some text 
+            <i class="fa-solid fa-rectangle-xmark"></i>
+        </div>
+            <form name="new-task">
+                <!-- for/name vincula label a input -->
+                <label for="task">
+                    <input text="text" name="task" placeholder="Add a new task" id="task">
+                    <div class="arrow">
+                        <i class="fa-solid fa-arrow-right-long fa-2x"></i>
+                    </div>
+                </label>
+            </form>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr id="0">
+                            <th>Don´t Forget to do this</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- contenteditable permite editar el texto de la etiqueta que lo contiene -->
+                            <td><i class="fa-solid fa-circle-check"></i><span contenteditable="true" class="task">Learn HTML!</span></td>
+                            <td>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-solid fa-square fa-stack-2x"></i>
+                                    <i class="fa-solid fa-pencil fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </td>
+                            <td>
+                                <span class="fa-stack fa-2x">
+                                    <i class="fa-solid fa-square fa-stack-2x"></i>
+                                    <i class="fa-solid fa-trash fa-stack-1x fa-inverse"></i>
+                                  </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+        
+
+    </div>
+    <!-- Javascript -->
+    <script src="js/app.js"></script>
+  </body>
 </html>
