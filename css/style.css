@@ -39,6 +39,7 @@ h1 {
   width: 80%;
   margin: 10% auto;
   padding: 2em;
+  background-color: white;
 }
 
 .main .container {
@@ -229,5 +230,34 @@ table td:nth-child(3) .fa-2x {
 
 table td:nth-child(3) .fa-2x:hover {
   color: #bb2d3b;
+}
+
+table .fa-circle-check {
+  color: #198754;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+table .fa-circle-check:hover {
+  color: #20c997;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.dismissible {
+  opacity: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.editable {
+  background-color: white;
+  display: inline-block;
+  padding: .3em;
+  border-radius: .3rem;
+  margin-top: .3em;
 }
 /*# sourceMappingURL=style.css.map */
