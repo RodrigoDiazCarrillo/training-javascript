@@ -31,14 +31,14 @@ body {
 }
 
 h1 {
-  font-family: "Smooch Sans", "sans-serif";
+  font-family: "Smooch Sans", sans-serif;
   font-size: 3.9rem;
 }
 
 .main {
   width: 80%;
-  margin: 10% auto;
   padding: 2em;
+  margin: 10% auto;
   background-color: white;
 }
 
@@ -55,11 +55,11 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main label div {
@@ -68,11 +68,11 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 0.5em;
   background-color: #0d6efd;
   min-height: 60px;
@@ -94,10 +94,10 @@ h1 {
 
 .main label div .fa-solid:hover {
   -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  transform: translateX(10px);
 }
 
-.main label input {
+.main input {
   display: block;
   width: 80%;
   background-color: #bee5e3;
@@ -110,28 +110,29 @@ h1 {
   transition: all 0.15s ease-in-out;
 }
 
-.main label input::-webkit-input-placeholder {
+.main input::-webkit-input-placeholder {
   color: #292a2b;
 }
 
-.main label input:-ms-input-placeholder {
+.main input:-ms-input-placeholder {
   color: #292a2b;
 }
 
-.main label input::-ms-input-placeholder {
+.main input::-ms-input-placeholder {
   color: #292a2b;
 }
 
-.main label input::placeholder {
+.main input::placeholder {
   color: #292a2b;
 }
 
-.main label input:focus {
+.main input:focus {
   border: 5px solid transparent;
   border-radius: 0.3rem;
   background-color: white;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  z-index: 2;
 }
 
 .main .alert {
@@ -141,25 +142,26 @@ h1 {
   margin: 1em auto;
   padding: 1em;
   border-radius: 0.3rem;
+  color: white;
   background-color: #d63384;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
-.main .alert .fa-recangle-xmark {
+.main .alert .fa-square-xmark {
   font-size: 1.5rem;
 }
 
-.main .alert .fa-recangle-xmark:hover {
+.main .alert .fa-square-xmark:hover {
   color: #292a2b;
 }
 
@@ -172,15 +174,15 @@ table {
 }
 
 table tr {
-  background-color: #f6f6f6;
+  background: #f6f6f6;
 }
 
 table tr:nth-of-type(odd) {
-  background-color: #e9e9e9;
+  background: #e9e9e9;
 }
 
 table th {
-  background-color: #2980b9;
+  background: #2980b9;
   padding: 0.5em;
   font-weight: 700;
   font-size: 1.5rem;
@@ -196,11 +198,11 @@ table th:last-child {
 }
 
 table td {
-  font-family: "Fredoka", "sans-serif";
+  font-family: "Fredoka", sans-serif;
   padding: 0.8em;
 }
 
-tabletd:first-child {
+table td:first-child {
   width: 70%;
   font-size: 1.5rem;
 }
@@ -219,9 +221,10 @@ table .fa-2x {
 }
 
 table .fa-2x:hover {
+  font-size: 1.3em;
   color: #ffca2c;
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 table td:nth-child(3) .fa-2x {
@@ -230,27 +233,29 @@ table td:nth-child(3) .fa-2x {
 
 table td:nth-child(3) .fa-2x:hover {
   color: #bb2d3b;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 table .fa-circle-check {
   color: #198754;
-  margin-right: 15px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin-right: 15px;
 }
 
 table .fa-circle-check:hover {
   color: #20c997;
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .dismissible {
   opacity: 0 !important;
   height: 0 !important;
   padding: 0 !important;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .editable {
